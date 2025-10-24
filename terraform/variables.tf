@@ -6,19 +6,19 @@ variable "ARM_SUBSCRIPTION_ID" {
 variable "author" {
   type        = string
   description = "Author of the resources"
-  default     = "ibrahim-kubernetes"
+  default     = "group6"
 }
 
 variable "resource_prefix" {
   type        = string
   description = "Resource prefix for all resources"
-  default     = "ibra-kub"
+  default     = "group6kub"
 }
 
 variable "resource_group_name" {
   type        = string
   description = "Name of the Resource Group"
-  default     = "ibra-new00"
+  default     = "group600"
 }
 
 variable "resource_group_location" {
