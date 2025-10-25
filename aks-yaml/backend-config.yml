@@ -2,13 +2,10 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: backend-config
-  namespace: default   # غيرت الـ namespace من default إلى test
+  namespace: default
 data:
-  # Database Configuration for Spring Boot
-  DB_HOST: mssql-service       # اسم الـ Service الخاص بـ MSSQL
-  DB_PORT: "1433"              # بورت MSSQL
-  DB_NAME: burgerbuilder       # أو أي اسم قاعدة بيانات موجود على MSSQL
-  DB_USERNAME: sa              # المستخدم الافتراضي لـ MSSQL
-
-  # Application Server Port
+  DB_HOST: mssql-service.default.svc.cluster.local
+  DB_PORT: "1433"
+  DB_NAME: burgerbuilder
+  DB_USERNAME: sa
   SERVER_PORT: "8080"
